@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculater</title>
+    <!-- <link rel="stylesheet" href="Calculater.css">  -->
+    <script defer src="calculator.js"></script>
+    <style>
+        body{
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container1{
+            /* background-color:r
+            gba(173, 164, 164, 0.776);
+             */
+             background-color: rgb(240, 190, 190);
+            position: relative;
+            width: 25%;
+            padding: 4%;
+            border-radius: 5%;
+            border: 3px solid black;
+        }
+         .input{
+            text-align: right;
+            margin-top: 40px;
+            margin-bottom: 65px;
+            height: 120px;
+            width: 100%;
+            border:1px solid black;
+            border-radius: 3px;
+            outline: none;
+            font-size: 39px;
+            color: black;
+            background-color: antiquewhite;
+        
+        } 
+        .btn1{
+            display: grid;
+            grid-gap: 22px;
+            grid-template-columns: repeat(4,1fr);
+           
+        }
+        button{
+            height:47px;
+            width: 90px;
+            border-radius: 25px;
+            /* border-color: blue; */
+            border: 3.5px solid black;
+            padding: 12px;
+            box-shadow: 6px 6px rgb(100, 98, 98);
+            background-color:rgba(173, 164, 164, 0.776);
+            font-size: 25px;
+            text-align-last: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+       
+       
+    </style>
+    
+</head>
+<body>
+    <div class="container1">
+        <input type="text" class="input"  id="visible" placeholder="0 ">
+        <div class="btn1">
+            <button style="background-color:rgb(216, 178, 108)">AC</button>
+            <button class="allclear" style="background-color: rgb(198, 67, 67);">DEL</button>
+            <button>%</button>
+            <button >/</button>
+
+            <button style="background-color: rgb(80, 80, 228);">7</button>
+            <button style="background-color:  rgb(80, 80, 228);">8</button>
+            <button style="background-color:  rgb(80, 80, 228);">9</button>
+            <button>*</button>
+
+            <button style="background-color:  rgb(80, 80, 228);">4</button>
+            <button style="background-color:  rgb(80, 80, 228);">5</button>
+            <button style="background-color:  rgb(80, 80, 228);">6</button>
+            <button>-</button>
+
+            <button style="background-color:  rgb(80, 80, 228);">1</button>
+            <button style="background-color:  rgb(80, 80, 228);">2</button>
+            <button style="background-color:  rgb(80, 80, 228);">3</button>
+            <button>+</button>
+
+            <button style="background-color:  rgb(80, 80, 228);">00</button>
+            <button style="background-color:  rgb(80, 80, 228);">0</button>
+            <button style="background-color:  rgb(80, 80, 228);">.</button>
+            <button style="background-color: rgb(34, 172, 34);">=</button>
+        </div>  
+    </div>
+</body>
+
+</html>
